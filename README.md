@@ -1,5 +1,5 @@
 # Кликер бот для покупки НФТ паков на бинансе
-_Binance NFT sales clicker bot (eng near)_
+_Binance NFT sales clicker bot_
 
 ___
 ## _Описание_
