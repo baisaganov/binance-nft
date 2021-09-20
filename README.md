@@ -1,5 +1,5 @@
 # Clicker bot for buying NTF packs on binance
-_Кликер бот для покупки НФТ паков на бинансе (на русском ниже)_
+_Кликер бот для покупки НФТ паков на бинансе ([на русском ниже](https://github.com/baisaganov/binance-nft/blob/main/README.md#%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5))_
 
 ___
 ## _Description_
