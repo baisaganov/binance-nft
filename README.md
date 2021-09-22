@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-# Кликер бот для покупки НФТ паков на бинансе
-_Binance NFT sales clicker bot_
-=======
 # Clicker bot for buying NTF packs on binance
 _Кликер бот для покупки НФТ паков на бинансе ([на русском ниже](https://github.com/baisaganov/binance-nft/blob/main/README.md#%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B0-%D0%B8-%D1%81%D0%B0%D0%BC-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82))_
->>>>>>> 27c2cd68aa1f6bd75b45ec0cb99e02af3520e2e9
 
 ___
 ## _About the script and the script itself_
@@ -18,7 +13,11 @@ _How to use_
 4. After a successful or unsuccessful purchase, close or refresh the page.
 
 _Compressed script_
->let buyerInterval=setInterval(buyer,1),packsValaue=+prompt('Введите кол-во паков для покупки',10);function buyer(){if(document.querySelector('.css-bsjx8j').querySelector('button')){const block=document.querySelector('.css-bsjx8j'),buyBtn=block.querySelector('button'),count=document.querySelector('input');count.value=+packsValaue;buyBtn.click();clearInterval(buyerInterval);setInterval(apply,1)}else{console.log('waiting selling time')}}function apply(){if(document.querySelector('.css-z9ynqk')){const divider=document.querySelector('.css-z9ynqk'),applyBtn=divider.querySelector('button');applyBtn.click()}else{console.log('waiting apply divider')}}
+>let buyerInterval=setInterval(buyer,1),packsValue=+prompt('Введите кол-во паков для покупки',10);function buyer(){if(document.querySelector('.css-bsjx8j').querySelector('button')){const block=document.querySelector('.css-bsjx8j'),buyBtn=block.querySelector('button'),count=block.querySelector('.css-1w6omp2');count.value=+packsValue;buyBtn.click();clearInterval(buyerInterval);setInterval(apply,1)}else{console.log('waiting selling time')}}function apply(){if(document.querySelector('.css-z9ynqk')){const divider=document.querySelector('.css-z9ynqk'),applyBtn=divider.querySelector('button');applyBtn.click()}else{console.log('waiting apply divider')}}
+
+
+_Max supply buyer script_
+>let buyerInterval=setInterval(buyer,1);function buyer(){if(document.querySelector('.css-bsjx8j').querySelector('button')){const block=document.querySelector('.css-bsjx8j'),buyBtn=block.querySelector('button'),maxBtn=block.querySelector('.css-1rqdfgy');maxBtn.click();buyBtn.click();clearInterval(buyerInterval);setInterval(apply,1)}else{console.log('waiting selling time')}}function apply(){if(document.querySelector('.css-z9ynqk')){const divider=document.querySelector('.css-z9ynqk'),applyBtn=divider.querySelector('button');applyBtn.click()}else{console.log('waiting apply divider')}}
 
 The complete script (long-script) is available in the commented repository.
 
@@ -39,7 +38,10 @@ _Как пользоваться_
 4. После удачной покупки или неудачной закройте или обновите страницу.
 
 _Сжатый скрипт_
->let buyerInterval=setInterval(buyer,1),packsValaue=+prompt('Введите кол-во паков для покупки',10);function buyer(){if(document.querySelector('.css-bsjx8j').querySelector('button')){const block=document.querySelector('.css-bsjx8j'),buyBtn=block.querySelector('button'),count=document.querySelector('input');count.value=+packsValaue;buyBtn.click();clearInterval(buyerInterval);setInterval(apply,1)}else{console.log('waiting selling time')}}function apply(){if(document.querySelector('.css-z9ynqk')){const divider=document.querySelector('.css-z9ynqk'),applyBtn=divider.querySelector('button');applyBtn.click()}else{console.log('waiting apply divider')}}
+>let buyerInterval=setInterval(buyer,1),packsValue=+prompt('Введите кол-во паков для покупки',10);function buyer(){if(document.querySelector('.css-bsjx8j').querySelector('button')){const block=document.querySelector('.css-bsjx8j'),buyBtn=block.querySelector('button'),count=block.querySelector('.css-1w6omp2');count.value=+packsValue;buyBtn.click();clearInterval(buyerInterval);setInterval(apply,1)}else{console.log('waiting selling time')}}function apply(){if(document.querySelector('.css-z9ynqk')){const divider=document.querySelector('.css-z9ynqk'),applyBtn=divider.querySelector('button');applyBtn.click()}else{console.log('waiting apply divider')}}
+
+_Скрипт для покупки максимального количества паков_
+>let buyerInterval=setInterval(buyer,1);function buyer(){if(document.querySelector('.css-bsjx8j').querySelector('button')){const block=document.querySelector('.css-bsjx8j'),buyBtn=block.querySelector('button'),maxBtn=block.querySelector('.css-1rqdfgy');maxBtn.click();buyBtn.click();clearInterval(buyerInterval);setInterval(apply,1)}else{console.log('waiting selling time')}}function apply(){if(document.querySelector('.css-z9ynqk')){const divider=document.querySelector('.css-z9ynqk'),applyBtn=divider.querySelector('button');applyBtn.click()}else{console.log('waiting apply divider')}}
 
 Полный скрипт (long-script) доступен в репозитории с комментариями.
 
