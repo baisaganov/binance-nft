@@ -1,13 +1,11 @@
-let buyerInterval = setInterval(buyer, 1),                                  // Старт функции покупки с интервалом опроса 1мс
-    packsValue = +prompt('Введите кол-во паков для покупки', 10);           // Окно ввода кол-ва паков для покупки
- 
+let buyerInterval = setInterval(buyer, 1);                                  // Старт функции покупки с интервалом опроса 1мс
 
 function buyer() {                                                          // ***Окно покупки***
     if (document.querySelector('.css-bsjx8j').querySelector('button')) {    // Если есть кнопка покупки
         const block = document.querySelector('.css-bsjx8j'),                // Блок продажи
               buyBtn = block.querySelector('button'),                       // Кнопка покупки
-              count = block.querySelector('.css-1w6omp2');                  // Поле ввода количества паков
-        count.value = +packsValue;                                          // КОЛИЧЕСТВО ПАКОВ
+              maxBtn = block.querySelector('.css-1rqdfgy');                 // Кнопка максимального количесвта паков
+        maxBtn.click();                                                     // Клик по макс. кол-ву
         buyBtn.click();                                                     // Клик по кнопке покупки
         clearInterval(buyerInterval);                                       // Остановка интервала
         setInterval(apply, 1);                                              // Старт функции подтверждения с интервалом опроса 1мс

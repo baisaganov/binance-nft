@@ -13,7 +13,11 @@ _How to use_
 4. After a successful or unsuccessful purchase, close or refresh the page.
 
 _Compressed script_
->let buyerInterval=setInterval(buyer,1),packsValaue=+prompt('Введите кол-во паков для покупки',10);function buyer(){if(document.querySelector('.css-bsjx8j').querySelector('button')){const block=document.querySelector('.css-bsjx8j'),buyBtn=block.querySelector('button'),count=document.querySelector('input');count.value=+packsValaue;buyBtn.click();clearInterval(buyerInterval);setInterval(apply,1)}else{console.log('waiting selling time')}}function apply(){if(document.querySelector('.css-z9ynqk')){const divider=document.querySelector('.css-z9ynqk'),applyBtn=divider.querySelector('button');applyBtn.click()}else{console.log('waiting apply divider')}}
+>let buyerInterval=setInterval(buyer,1),packsValue=+prompt('Введите кол-во паков для покупки',10);function buyer(){if(document.querySelector('.css-bsjx8j').querySelector('button')){const block=document.querySelector('.css-bsjx8j'),buyBtn=block.querySelector('button'),count=block.querySelector('.css-1w6omp2');count.value=+packsValue;buyBtn.click();clearInterval(buyerInterval);setInterval(apply,1)}else{console.log('waiting selling time')}}function apply(){if(document.querySelector('.css-z9ynqk')){const divider=document.querySelector('.css-z9ynqk'),applyBtn=divider.querySelector('button');applyBtn.click()}else{console.log('waiting apply divider')}}
+
+
+_Max supply buyer script_
+>let buyerInterval=setInterval(buyer,1);function buyer(){if(document.querySelector('.css-bsjx8j').querySelector('button')){const block=document.querySelector('.css-bsjx8j'),buyBtn=block.querySelector('button'),maxBtn=block.querySelector('.css-1rqdfgy');maxBtn.click();buyBtn.click();clearInterval(buyerInterval);setInterval(apply,1)}else{console.log('waiting selling time')}}function apply(){if(document.querySelector('.css-z9ynqk')){const divider=document.querySelector('.css-z9ynqk'),applyBtn=divider.querySelector('button');applyBtn.click()}else{console.log('waiting apply divider')}}
 
 The complete script (long-script) is available in the commented repository.
 
@@ -34,7 +38,10 @@ _Как пользоваться_
 4. После удачной покупки или неудачной закройте или обновите страницу.
 
 _Сжатый скрипт_
->let buyerInterval=setInterval(buyer,1),packsValaue=+prompt('Введите кол-во паков для покупки',10);function buyer(){if(document.querySelector('.css-bsjx8j').querySelector('button')){const block=document.querySelector('.css-bsjx8j'),buyBtn=block.querySelector('button'),count=document.querySelector('input');count.value=+packsValaue;buyBtn.click();clearInterval(buyerInterval);setInterval(apply,1)}else{console.log('waiting selling time')}}function apply(){if(document.querySelector('.css-z9ynqk')){const divider=document.querySelector('.css-z9ynqk'),applyBtn=divider.querySelector('button');applyBtn.click()}else{console.log('waiting apply divider')}}
+>let buyerInterval=setInterval(buyer,1),packsValue=+prompt('Введите кол-во паков для покупки',10);function buyer(){if(document.querySelector('.css-bsjx8j').querySelector('button')){const block=document.querySelector('.css-bsjx8j'),buyBtn=block.querySelector('button'),count=block.querySelector('.css-1w6omp2');count.value=+packsValue;buyBtn.click();clearInterval(buyerInterval);setInterval(apply,1)}else{console.log('waiting selling time')}}function apply(){if(document.querySelector('.css-z9ynqk')){const divider=document.querySelector('.css-z9ynqk'),applyBtn=divider.querySelector('button');applyBtn.click()}else{console.log('waiting apply divider')}}
+
+_Скрипт для покупки максимального количества паков_
+>let buyerInterval=setInterval(buyer,1);function buyer(){if(document.querySelector('.css-bsjx8j').querySelector('button')){const block=document.querySelector('.css-bsjx8j'),buyBtn=block.querySelector('button'),maxBtn=block.querySelector('.css-1rqdfgy');maxBtn.click();buyBtn.click();clearInterval(buyerInterval);setInterval(apply,1)}else{console.log('waiting selling time')}}function apply(){if(document.querySelector('.css-z9ynqk')){const divider=document.querySelector('.css-z9ynqk'),applyBtn=divider.querySelector('button');applyBtn.click()}else{console.log('waiting apply divider')}}
 
 Полный скрипт (long-script) доступен в репозитории с комментариями.
 
