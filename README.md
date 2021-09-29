@@ -1,6 +1,8 @@
 # Clicker bot for buying NTF packs on binance
 _Кликер бот для покупки НФТ паков на бинансе ([на русском ниже](https://github.com/baisaganov/binance-nft/blob/main/README.md#%D0%BE-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%B0-%D0%B8-%D1%81%D0%B0%D0%BC-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82))_
 
+TG: https://t.me/aliw39
+Donate: BTC - 18y7UP8P3Dd9kz7eJtZaLvRif22swyK9oF
 ___
 ## _About the script and the script itself_
 
