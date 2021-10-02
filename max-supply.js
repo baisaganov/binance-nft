@@ -4,9 +4,11 @@ function buyer() {                                                          // *
     if (document.querySelector('.css-bsjx8j').querySelector('button')) {    // Если есть кнопка покупки
         const block = document.querySelector('.css-bsjx8j'),                // Блок продажи
               buyBtn = block.querySelector('button'),                       // Кнопка покупки
-              maxBtn = block.querySelector('.css-1rqdfgy');                 // Кнопка максимального количесвта паков
+              maxBtn = block.querySelector('.css-f2ec0a');                  // Кнопка максимального количесвта паков
         maxBtn.click();                                                     // Клик по макс. кол-ву
+        console.log('Max clicked');
         buyBtn.click();                                                     // Клик по кнопке покупки
+        console.log('Buy clicked');
         clearInterval(buyerInterval);                                       // Остановка интервала
         setInterval(apply, 1);                                              // Старт функции подтверждения с интервалом опроса 1мс
     } else {
