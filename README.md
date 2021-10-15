@@ -3,9 +3,9 @@ _Кликер бот для покупки НФТ паков на бинансе
 
 TG: https://t.me/aliw39
 Donate: 
-*BTC - 18y7UP8P3Dd9kz7eJtZaLvRif22swyK9oF
-*BNB/ETH/Polygon networks - 0xa8075e5bb773572891eE6Ee3091c9D1F4177465B
-*XRP - rDgRhbCPTnGutuGzqmJjFadTWfEzvfxEj6
+*BTC - 18y7UP8P3Dd9kz7eJtZaLvRif22swyK9oF .
+*BNB/ETH/Polygon networks - 0xa8075e5bb773572891eE6Ee3091c9D1F4177465B .
+*XRP - rDgRhbCPTnGutuGzqmJjFadTWfEzvfxEj6 .
 ___
 ## _About the script and the script itself_
 
@@ -33,9 +33,9 @@ ___
 ## _О работе скрипта и сам скрипт_
 TG: https://t.me/aliw39
 Donate: 
-BTC - 18y7UP8P3Dd9kz7eJtZaLvRif22swyK9oF
-BNB/ETH/Polygon networks - 0xa8075e5bb773572891eE6Ee3091c9D1F4177465B
-XRP - rDgRhbCPTnGutuGzqmJjFadTWfEzvfxEj6
+*BTC - 18y7UP8P3Dd9kz7eJtZaLvRif22swyK9oF .
+*BNB/ETH/Polygon networks - 0xa8075e5bb773572891eE6Ee3091c9D1F4177465B .
+*XRP - rDgRhbCPTnGutuGzqmJjFadTWfEzvfxEj6 .
 
 Скрипт нужно поместить на страницу самого сейла, желательно прям перед продажей(1-2 мин), появится окошка запроса количества паков. Каждую миллисекунду опрашивается блок продажи на нахождение кнопки покупки. Как только кнопка появилась, скрипт введет количество паков и нажмет на кнопку покупки. После чего начнется опрос страницы на появление блока подтверждения, как только появляется блок, нажимается кнопка подтверждения. Зачастую после нажатия выдаются ошибки, поэтому после первого нажатия интервал нажатия не сбрасывается. Если количество паков закончилось, закройте страницу.
 _Главный плюс скрипта, получить бан за него невозможно._
