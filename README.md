@@ -3,9 +3,9 @@ _Кликер бот для покупки НФТ паков на бинансе
 
 TG: https://t.me/aliw39
 Donate: 
-BTC - 18y7UP8P3Dd9kz7eJtZaLvRif22swyK9oF
-BNB/ETH/Polygon networks - 0xa8075e5bb773572891eE6Ee3091c9D1F4177465B
-XRP - rDgRhbCPTnGutuGzqmJjFadTWfEzvfxEj6
+*BTC - 18y7UP8P3Dd9kz7eJtZaLvRif22swyK9oF
+*BNB/ETH/Polygon networks - 0xa8075e5bb773572891eE6Ee3091c9D1F4177465B
+*XRP - rDgRhbCPTnGutuGzqmJjFadTWfEzvfxEj6
 ___
 ## _About the script and the script itself_
 
