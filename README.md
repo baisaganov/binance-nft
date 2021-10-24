@@ -12,8 +12,8 @@ ___
 The script must be placed on the page of the sale itself, preferably right before the sale (1-2 minutes), the number of packs for the purchase will be requested. Every millisecond, the sell block is polled to find the buy button. Once the button appears, the script will enter the quantity and click on the buy button. After that, the page will start polling for the appearance of the confirmation block, as soon as the block appears, the confirmation button is pressed. Often, after pressing, errors are issued, so after the first press, the pressing interval is not reset. If the quantity is over. Close the page.
 
 _How to use_
-1. Place the script on the site through the developer's console.
-2. In the window that appears, enter the number of packs before the purchase (be guided by the limitations of the sale).
+1. There is a variable "packsValue" in the script, replace its value with yours. By default 1.
+2. Place this script for sale through the developer's console a couple of minutes before the start of the sale.
 3. Wait for the start of the sale.
 4. After a successful or unsuccessful purchase, close or refresh the page.
 
@@ -41,13 +41,13 @@ Donate:
 _Главный плюс скрипта, получить бан за него невозможно._
 
 _Как пользоваться_
-1. Помещаете скрипт(код) на странице сейла, за пару минут до начала, через  консоль раработчика.
-2. В появившимся окне вводим количество паков до покупки (ориентируйтесь на ограничения сейла).
+1. В скрипте имеется переменная "packsValue", замените ее значение на ваше. По дефолту 1.(Перменная в начале скрипта "let packsValue=1")
+2. Помещаете этот скрипт, через консоль разработчика на странице продажа, за пару минут до начала сейла.(Не закрывайте страницу)
 3. Ждите начала сейла.
 4. После удачной покупки или неудачной закройте или обновите страницу.
 
 _Сжатый скрипт_
->let packsValue=+prompt('Введите кол-во паков для покупки',10),buyerInterval=setInterval(buyer,1),switcher=true,countInterval;function buyer(){if(document.querySelector('.css-bsjx8j').querySelector('button')){const block=document.querySelector('.css-bsjx8j'),buyBtn=block.querySelector('button');countInterval=setInterval(clicker,1);if(switcher==false){buyBtn.click();clearInterval(buyerInterval);setInterval(apply,1)}}else{console.log('waiting selling time')}}function apply(){if(document.querySelector('.css-z9ynqk')){const divider=document.querySelector('.css-z9ynqk'),applyBtn=divider.querySelector('button');applyBtn.click()}else{console.log('waiting apply divider')}}function clicker(){if(packsValue-1!=0){document.querySelector('.css-1my7wuf').nextElementSibling.click();packsValue-=1}else{switcher=false;clearInterval(countInterval)}}
+>let packsValue=1,buyerInterval=setInterval(buyer,1),switcher=!0,countInterval;function buyer(){if(document.querySelector(".css-bsjx8j").querySelector("button")){const e=document.querySelector(".css-bsjx8j"),t=e.querySelector("button");countInterval=setInterval(clicker,1),0==switcher&&(t.click(),clearInterval(buyerInterval),setInterval(apply,1))}else console.log("waiting selling time")}function apply(){if(document.querySelector(".css-z9ynqk")){const e=document.querySelector(".css-z9ynqk"),t=e.querySelector("button");t.click()}else console.log("waiting apply divider")}function clicker(){packsValue-1!=0?(document.querySelector(".css-1my7wuf").nextElementSibling.click(),--packsValue):(switcher=!1,clearInterval(countInterval))}
 
 _Скрипт для покупки максимального количества паков_
 >let buyerInterval=setInterval(buyer,1);function buyer(){if(document.querySelector('.css-bsjx8j').querySelector('button')){const block=document.querySelector('.css-bsjx8j'),buyBtn=block.querySelector('button'),maxBtn=block.querySelector('.css-f2ec0a');maxBtn.click();console.log('Max clicked');buyBtn.click();console.log('Buy clicked');clearInterval(buyerInterval);setInterval(apply,1)}else{console.log('waiting selling time')}}function apply(){if(document.querySelector('.css-z9ynqk')){const divider=document.querySelector('.css-z9ynqk'),applyBtn=divider.querySelector('button');applyBtn.click()}else{console.log('waiting apply divider')}}

@@ -1,4 +1,4 @@
-let packsValue = +prompt('Введите кол-во паков для покупки', 10),           // Окно ввода кол-ва паков для покупки
+let packsValue = 1,                                                         // Перемнная ввода кол-ва паков для покупки
     buyerInterval = setInterval(buyer, 1),                                  // Старт функции покупки с интервалом опроса 1мс
     switcher = true,
     countInterval;
