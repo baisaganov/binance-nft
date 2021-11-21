@@ -15,6 +15,7 @@ _How to use_
 2. Place this script for sale through the developer's console a couple of minutes before the start of the sale.
 3. Wait for the start of the sale.
 4. After a successful or unsuccessful purchase, close or refresh the page.
+
 ![Alt Text](https://media.giphy.com/media/tqT7TZQ5Fz15xQaUml/giphy.gif)
 
 _Compressed script_
@@ -44,6 +45,7 @@ _Как пользоваться_
 2. Помещаете этот скрипт, через консоль разработчика на странице продажа, за пару минут до начала сейла.(Не закрывайте страницу)
 3. Ждите начала сейла.
 4. После удачной покупки или неудачной закройте или обновите страницу.
+
 ![Alt Text](https://media.giphy.com/media/tqT7TZQ5Fz15xQaUml/giphy.gif)
 
 _Сжатый скрипт_
