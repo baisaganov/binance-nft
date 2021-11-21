@@ -15,6 +15,7 @@ _How to use_
 2. Place this script for sale through the developer's console a couple of minutes before the start of the sale.
 3. Wait for the start of the sale.
 4. After a successful or unsuccessful purchase, close or refresh the page.
+![Alt Text](https://media.giphy.com/media/tqT7TZQ5Fz15xQaUml/giphy.gif)
 
 _Compressed script_
 >let packsValue=1,buyerInterval=setInterval(buyer,1),switcher=true,countInterval;function buyer(){if(document.querySelector('.css-bsjx8j').querySelector('button')){const block=document.querySelector('.css-bsjx8j'),buyBtn=block.querySelector('button');countInterval=setInterval(clicker,1);if(switcher==false){buyBtn.click();clearInterval(buyerInterval);setInterval(apply,1)}}else{console.log('waiting selling time')}}function apply(){if(document.querySelector('.css-z9ynqk')){const divider=document.querySelector('.css-z9ynqk'),applyBtn=divider.querySelector('button');applyBtn.click()}else{console.log('waiting apply divider')}}function clicker(){if(packsValue-1!=0){document.querySelector('.css-1my7wuf').nextElementSibling.click();packsValue-=1}else{switcher=false;clearInterval(countInterval)}}
@@ -43,6 +44,7 @@ _Как пользоваться_
 2. Помещаете этот скрипт, через консоль разработчика на странице продажа, за пару минут до начала сейла.(Не закрывайте страницу)
 3. Ждите начала сейла.
 4. После удачной покупки или неудачной закройте или обновите страницу.
+![Alt Text](https://media.giphy.com/media/tqT7TZQ5Fz15xQaUml/giphy.gif)
 
 _Сжатый скрипт_
 >let packsValue=1,buyerInterval=setInterval(buyer,1),switcher=!0,countInterval;function buyer(){if(document.querySelector(".css-bsjx8j").querySelector("button")){const e=document.querySelector(".css-bsjx8j"),t=e.querySelector("button");countInterval=setInterval(clicker,1),0==switcher&&(t.click(),clearInterval(buyerInterval),setInterval(apply,1))}else console.log("waiting selling time")}function apply(){if(document.querySelector(".css-z9ynqk")){const e=document.querySelector(".css-z9ynqk"),t=e.querySelector("button");t.click()}else console.log("waiting apply divider")}function clicker(){packsValue-1!=0?(document.querySelector(".css-1my7wuf").nextElementSibling.click(),--packsValue):(switcher=!1,clearInterval(countInterval))}
